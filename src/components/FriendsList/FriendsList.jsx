@@ -1,6 +1,7 @@
 import {List, ListItem} from './FriendsList.styled';
 import {BsDot} from 'react-icons/bs';
 import { IconContext } from "react-icons";
+// import PropTypes from 'prop-types';
 
 export const FriendsList = ({items}) => {
     return <List>
@@ -12,3 +13,9 @@ export const FriendsList = ({items}) => {
         </ListItem>))}
         </List>
 }
+
+// FriendsList.PropTypes = {
+//     id: PropTypes.string.isRequired,
+//     avatar: PropTypes.string.isRequired,
+//     name: PropTypes.string.isRequired
+// }

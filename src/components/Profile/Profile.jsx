@@ -1,4 +1,6 @@
-import {UserName, ProfileList, Section, ProfileInfo} from './Profile.styled'
+import { UserName, ProfileList, Section, ProfileInfo } from './Profile.styled';
+// import PropTypes from 'prop-types';
+
 
 export const Profile = ({items}) => {
     return <Section>
@@ -30,3 +32,10 @@ export const Profile = ({items}) => {
 </Section>
 }
 
+// Profile.propTypes = {
+//   avatar: PropTypes.string.isRequired,
+//   username: PropTypes.string.isRequired,
+//   followers: PropTypes.number.isRequired,
+//   views: PropTypes.number.isRequired,
+//   likes: PropTypes.number.isRequired
+// }

@@ -1,4 +1,5 @@
-import {TableItem, TableStyle} from './Transactions.styled'
+import { TableItem, TableStyle } from './Transactions.styled';
+// import PropTypes from 'prop-types';
 
 export const Transactions = ({ items }) => {
 return <TableStyle>
@@ -18,3 +19,10 @@ return <TableStyle>
     </tbody>
     </TableStyle>
 }
+
+// Transactions.PropTypes = {
+//     id: PropTypes.string.isRequired,
+//     type: PropTypes.string.isRequired,
+//     amount: PropTypes.string.isRequired,
+//     currency: PropTypes.string.isRequired
+// }

@@ -1,4 +1,5 @@
-import {Section, StatList} from './Statistics.styled'
+import { Section, StatList } from './Statistics.styled';
+// import PropTypes from 'prop-types';
 
 export const Statistics = ({items}) => {
     return <Section>
@@ -11,3 +12,9 @@ export const Statistics = ({items}) => {
         </StatList>
     </Section>
 }
+
+// Statistics.PropTypes = {
+//     id: PropTypes.string.isRequired,
+//     label: PropTypes.string.isRequired,
+//     percentage: PropTypes.number.isRequired
+// }
