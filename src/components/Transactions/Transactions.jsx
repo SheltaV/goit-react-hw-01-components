@@ -1,5 +1,5 @@
 import { TableItem, TableStyle } from './Transactions.styled';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 export const Transactions = ({ items }) => {
 return <TableStyle>
@@ -20,9 +20,12 @@ return <TableStyle>
     </TableStyle>
 }
 
-// Transactions.PropTypes = {
-//     id: PropTypes.string.isRequired,
-//     type: PropTypes.string.isRequired,
-//     amount: PropTypes.string.isRequired,
-//     currency: PropTypes.string.isRequired
-// }
+Transactions.propTypes = {
+items: PropTypes.arrayOf(
+    PropTypes.exact({
+      id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+  currency: PropTypes.string.isRequired
+    })  
+    )}
