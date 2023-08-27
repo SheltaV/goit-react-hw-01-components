@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 
 export const Statistics = ({stats, title}) => {
     return <Section>
-        {title.length > 0 && <h2>Upload stats</h2>}
-        {/* <h2>Upload stats</h2> */}
+        {title && <h2>Upload stats</h2>}
         <StatList>
         {stats.map(item => (<li key={item.id}>
             <p>{item.label}</p>
